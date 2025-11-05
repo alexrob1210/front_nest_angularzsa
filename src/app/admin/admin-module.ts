@@ -2,18 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AdminRoutingModule } from './admin-routing-module';
-import { Perfil } from './components/perfil/perfil';
-import { Cliente } from './components/cliente/cliente';
-
+import { PerfilComponent } from './components/perfil/perfil.component';
+import { ClienteComponent } from './components/cliente/cliente.component';
 
 @NgModule({
-  declarations: [
-    Perfil,
-    Cliente
+  declarations: [PerfilComponent, 
+    ClienteComponent
   ],
-  imports: [
-    CommonModule,
-    AdminRoutingModule
-  ]
+  
+imports: [CommonModule, 
+    AdminRoutingModule],
 })
-export class AdminModule { }
+export class AdminModule {}
