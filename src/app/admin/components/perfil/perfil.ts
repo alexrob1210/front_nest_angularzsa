@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   templateUrl: './perfil.html',
   styleUrl: './perfil.scss',
 })
-export class PerfilComponent {
+export class Perfil{
 
 }
