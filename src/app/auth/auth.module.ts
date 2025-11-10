@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthRoutingModule } from './auth-routing-module';
+import { AuthRoutingModule } from './auth.routing-module';
 import { Login } from './components/login/login';
 import { Register } from './components/register/register';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -16,12 +16,15 @@ import { Auth } from './services/auth';
     Login,
     Register
   ],
-  imports: [
+
+  imports:[
     CommonModule,
     AuthRoutingModule,
     ReactiveFormsModule,
     HttpClientModule
+  ],
 
-  ]
 })
-export class AuthModule { }
+
+
+export class AuthModule { };

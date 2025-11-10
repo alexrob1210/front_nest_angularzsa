@@ -1,9 +1,10 @@
-import { ApplicationConfig, importProvidersFrom } from '@angular/core';
+import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core'; // <-- 1. IMPORTA ESTO
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
-import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
+//import { provideClientHydration } from '@angular/platform-browser';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
-  providers:[provideRouter(routes),provideHttpClient(withFetch())]
+  providers:[provideRouter(routes),
+    provideHttpClient(withFetch()) ]
 };
